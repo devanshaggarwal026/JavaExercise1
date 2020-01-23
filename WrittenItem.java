@@ -11,8 +11,18 @@ public abstract class WrittenItem extends Item{
 		
 	} 
 	
+	
+	public abstract String physicalLibrary();
+	
 	public int computeSalePrice() {
 		return super.getNoOfCopies();
 	}
 
+	public String getAuthor() {
+		return author; 
+	}
+	
+	public void setAuthor(String author) {
+		this.author = author;
+	}
 }
